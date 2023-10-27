@@ -1,23 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+// importing components from react-router-dom package
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Message from "./Message";
-import ListGroup from "./components/ListGroup";
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Education from "./components/Education";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <div>
-        <Message />
-      </div>
-      <div className="card"></div>
-      <br></br>
-      <div>
-        <ListGroup />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="education" element={<Education />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
