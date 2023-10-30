@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function ListGroup() {
   return (
@@ -6,38 +6,33 @@ function ListGroup() {
       id="navigate"
       className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
     >
-      <a
-        href="/"
-        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-      >
-        <span className="fs-4">Sidebar</span>
-      </a>
+      <span className="fs-4">Contents</span>
       <hr></hr>
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <Link to="/" className="nav-link text-white" aria-current="page">
+          <NavLink to="/" className="nav-link text-white" aria-current="page">
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/education" className="nav-link text-white">
+          <NavLink to="/education" className="nav-link text-white">
             Education
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            Orders
-          </a>
+          <NavLink to="/skills" className="nav-link text-white">
+            Special Skills
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            Products
-          </a>
+          <NavLink to="/activities" className="nav-link text-white">
+            Extra-Curricula Activities
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link text-white">
-            Customers
-          </a>
+          <NavLink to="/hobbies" className="nav-link text-white">
+            Hobbies and Interests
+          </NavLink>
         </li>
       </ul>
       <hr></hr>

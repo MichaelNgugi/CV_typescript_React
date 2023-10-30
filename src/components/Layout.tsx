@@ -14,7 +14,7 @@ const Layout = () => {
         <div className="row">
           <ListGroup />
           &nbsp; &nbsp;
-          <div className="col-md-7">
+          <div className="col-md-8 bg-dark">
             <Outlet />
           </div>
         </div>

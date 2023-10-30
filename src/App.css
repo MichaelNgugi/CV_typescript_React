@@ -4,6 +4,9 @@
   padding: 0.5rem;
 }
 
+h2 {
+  text-align: center;
+}
 
 .logo {
   height: 6em;
@@ -40,14 +43,42 @@
   background-size: fixed;
 }
 
+
+.container {
+  line-height: 1.8;
+}
+
+.badge img{
+  width: 300px;
+  height: 250px;
+  position: contain;
+}
+
+.col-md-5 {
+  padding: 20px;
+  line-height: 1.8;
+  margin-left: 20px;
+}
+
 .col-md-7 {
-  background-color: black;
+  padding: 20px;
+  line-height: 2;
+  margin-left: 20px;
+}
+
+.col-md-8 {
+  padding: 20px;
   color: white;
+  margin-left: 30px;
+}
+
+.nav.item {
+  margin-bottom: 10px;
 }
 
 .nav-item:hover , .nav-link.active {
-  background-color: blue;
-  border-radius: 12px;
+  background-color: blue !important;
+  border-radius: 12px !important;
   transition: background-color 0.4s ease;
 }
 
